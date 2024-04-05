@@ -42,7 +42,7 @@ int main(void)
      while(1){
     	 if(ret){
     		 val = LIS_GetData();
-    		 sprintf(str, "X=%d, Y=%d\r", val.x, val.y);
+    		 sprintf(str, "X=%d, Y=%d", val.x, val.y);
     		 LcdPuts(LCD_LINE1, str);
     		 sprintf(str, "Z=%d", val.z);
     		 LcdPuts(LCD_LINE2, str);
