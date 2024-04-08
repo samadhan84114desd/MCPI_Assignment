@@ -39,17 +39,17 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  17 .debug_macro  000183fc  00000000  00000000  00004771  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_line   00001b1e  00000000  00000000  0001cb6d  2**0
+ 18 .debug_line   00001b1a  00000000  00000000  0001cb6d  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    0008beb2  00000000  00000000  0001e68b  2**0
+ 19 .debug_str    0008becd  00000000  00000000  0001e687  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .comment      00000043  00000000  00000000  000aa53d  2**0
+ 20 .comment      00000043  00000000  00000000  000aa554  2**0
                   CONTENTS, READONLY
- 21 .debug_frame  000003a4  00000000  00000000  000aa580  2**2
+ 21 .debug_frame  000003a4  00000000  00000000  000aa598  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 22 .debug_loclists 0000001f  00000000  00000000  000aa924  2**0
+ 22 .debug_loclists 0000001f  00000000  00000000  000aa93c  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 23 .debug_line_str 00000056  00000000  00000000  000aa943  2**0
+ 23 .debug_line_str 00000071  00000000  00000000  000aa95b  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -131,7 +131,7 @@ static inline void DelayMs(volatile uint32_t ms) {
  8000214:	10624dd3 	.word	0x10624dd3
 
 08000218 <LedInit>:
- */
+
 
 #include "led.h"
 #include "stm32f4xx.h"

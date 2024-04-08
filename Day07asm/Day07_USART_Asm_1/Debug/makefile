@@ -59,8 +59,8 @@ all: main-build
 main-build: Day07_USART_Asm_1.elf secondary-outputs
 
 # Tool invocations
-Day07_USART_Asm_1.elf Day07_USART_Asm_1.map: $(OBJS) $(USER_OBJS) /home/pranav/MCPI_Practise/Day07_USART_Asm_1/STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Day07_USART_Asm_1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/pranav/MCPI_Practise/Day07_USART_Asm_1/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Day07_USART_Asm_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Day07_USART_Asm_1.elf Day07_USART_Asm_1.map: $(OBJS) $(USER_OBJS) /home/samadhan/mcpi_practise/MCPI_Assignment/Day07asm/Day07_USART_Asm_1/STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Day07_USART_Asm_1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/samadhan/mcpi_practise/MCPI_Assignment/Day07asm/Day07_USART_Asm_1/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Day07_USART_Asm_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
